@@ -23,11 +23,12 @@ html, body{
 }
 
 header {
-    background-color: #B2B8D4;
+    background-color: #7c90e7;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 0 1em;
+    height:10%;
 }
 .titulo{
     display: flex;
@@ -46,18 +47,57 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    height:100%;
+    flex-direction: column;
+    height:70%;
 }
 
 nav {
-    width: 40%;
-    height: 100%;
-    border-right:3px solid #B2B8D4;
-    background-color: #b1bdfd;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    border-bottom:1px solid #B2B8D4;
+    background-color:#7c90e7;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+    height:100%;
+    width: 99%;
+    justify-content: space-between;
+    align-items:flex-end;    
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#submenu{
+    background-color: #4d68e4;
+    position: absolute;
+    width:40%;
+    height:60%;
+}
+#submenu{
+    display: flex;
+    justify-content: left;
+}   
+#sublist ul{
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+#sublist{
+    cursor: pointer;
+}#sublist:hover{
+    color: blue;
 }
 
 main {
+    padding:2%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,23 +105,16 @@ main {
     height: 100%;
     text-align: justify;
 }
-
-aside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    border-right:3px solid #B2B8D4;
-    background-color: #b1bdfd;
+main p{
     height:100%;
+    width: 60%;
 }
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blueviolet;
-    background-color:#b1bdfd;
+    background-color:#5b70e9;
     width: 100%;
-    height:50%; 
+    height:20%; 
 }
